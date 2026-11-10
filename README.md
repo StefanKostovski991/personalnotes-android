@@ -138,8 +138,23 @@ Requested at first use, never on launch:
 ./gradlew :app:lintDebug          # lint, currently 0 errors
 ```
 
-Requires a JDK 17+ (`JAVA_HOME`) and the Android SDK (see `local.properties`).
+Requires a JDK 17+ (`JAVA_HOME`) and the Android SDK.
 `compileSdk`/`targetSdk` 37, `minSdk` 30.
+
+### First clone
+
+Two files are intentionally not in the repository, and the build tells you which one is missing:
+
+```bash
+# 1. Point the build at your Android SDK (local.properties is machine specific).
+echo "sdk.dir=$HOME/Library/Android/sdk" > local.properties
+
+# 2. Add your Firebase config (it carries an API key).
+cp app/google-services.template.json app/google-services.json   # then fill in real values
+```
+
+Without `google-services.json` the build stops at `:app:checkFirebaseConfig` with the same
+instructions. See "Firebase App Distribution" below for downloading the real file.
 
 `gradle.properties` sets `kotlin.compiler.execution.strategy=in-process` so the build does not
 depend on the Kotlin compile daemon's marker directory, which is read-only in sandboxed
