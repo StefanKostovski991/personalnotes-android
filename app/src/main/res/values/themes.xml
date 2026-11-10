@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+      The launch theme. The platform splash (Android 12+) uses the brand gold as its window
+      background and the app mark as its icon, so the hand-off to the animated Compose splash is
+      seamless. On older versions the same background is drawn by the window itself.
+    -->
+    <style name="Theme.PersonalNotes.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/brand_gold</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="windowSplashScreenAnimationDuration">400</item>
+        <item name="postSplashScreenTheme">@style/Theme.PersonalNotes</item>
+    </style>
+
+    <!--
+      The app theme. It is based on the platform Material theme with no action bar; all real
+      styling happens in Compose (PersonalNotesTheme), this only avoids a flash of the wrong
+      colour before the first frame.
+    -->
+    <style name="Theme.PersonalNotes" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/brand_butter</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+</resources>

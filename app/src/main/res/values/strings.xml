@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Personal Notes</string>
+    <!-- Shown in other apps' share sheets. -->
+    <string name="share_to_app">Save to Personal Notes</string>
+</resources>

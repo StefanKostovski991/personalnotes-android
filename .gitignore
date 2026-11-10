@@ -1,0 +1,30 @@
+*.iml
+.gradle
+.kotlin
+/kotlin
+/build
+/**/build/
+/local.properties
+# IDE state is machine specific; only shared code style and inspection profiles are kept.
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+/.idea/deploymentTargetSelector.xml
+/.idea/deviceManager.xml
+.DS_Store
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Firebase: the real config carries project identifiers and an API key, and it is downloaded
+# per project. app/google-services.template.json is committed as the shape reference instead.
+/app/google-services.json
+# Service account used by `appDistributionUpload*`; never commit credentials.
+/firebase-service-account.json
+*.keystore
+*.jks
+!debug.keystore

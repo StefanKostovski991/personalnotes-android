@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Files this app is allowed to hand to another app through its FileProvider.
+  Both directories live in the cache: nothing leaves the app until the user shares it, and the
+  system may reclaim the space afterwards.
+-->
+<paths>
+    <!-- Exported .pnote documents. -->
+    <cache-path
+        name="exports"
+        path="exports/" />
+    <!-- Voice recordings copied out for playback elsewhere. -->
+    <cache-path
+        name="attachments"
+        path="attachments/" />
+</paths>

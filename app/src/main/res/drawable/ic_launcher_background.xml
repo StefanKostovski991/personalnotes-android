@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Launcher background: a soft warm glow instead of a flat colour, so the mark sits on the same
+  yellow identity as the app itself. A gradient is safe here because the background layer is
+  never scaled or cropped by the adaptive-icon mask.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path android:pathData="M0,0 h108 v108 h-108 z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="0"
+                android:startY="0"
+                android:endX="108"
+                android:endY="108">
+                <item android:color="#FFFFE9A3" android:offset="0.0" />
+                <item android:color="#FFFFC93C" android:offset="0.55" />
+                <item android:color="#FFFFA000" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- corner glow, keeps the flat vector from looking printed -->
+    <path android:pathData="M108,0 h-46 a46,46 0 0 0 46,46 z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="62"
+                android:startY="0"
+                android:endX="108"
+                android:endY="46">
+                <item android:color="#66FFFFFF" android:offset="0.0" />
+                <item android:color="#00FFFFFF" android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

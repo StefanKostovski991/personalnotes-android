@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Personal Notes app mark: a ruled sheet of paper with a pencil resting across it.
+
+  Drawn in the 108x108 adaptive-icon viewport. The artwork is centred on the viewport centre and
+  scaled into a 66dp circle, because the system splash screen draws this layer through a circular
+  mask that is smaller than the launcher's safe zone - anything outside that circle is cropped.
+
+  Deliberately built from flat fills only - no gradients, filters or strokes - so it renders
+  identically in every launcher, on the splash screen and as a themed (monochrome) icon.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- darker page behind: reads as depth without needing a shadow filter -->
+    <path
+        android:fillColor="#C98F00"
+        android:pathData="M 38.39,26.38 h 33.97 a 5.66,5.66,0,0,1,5.66,5.66 v 39.63 a 5.66,5.66,0,0,1,-5.66,5.66 h -33.97 a 5.66,5.66,0,0,1,-5.66,-5.66 v -39.63 a 5.66,5.66,0,0,1,5.66,-5.66 z" />
+    <!-- the sheet -->
+    <path
+        android:fillColor="#FFFDF5"
+        android:pathData="M 36.77,23.15 h 33.97 a 5.66,5.66,0,0,1,5.66,5.66 v 39.63 a 5.66,5.66,0,0,1,-5.66,5.66 h -33.97 a 5.66,5.66,0,0,1,-5.66,-5.66 v -39.63 a 5.66,5.66,0,0,1,5.66,-5.66 z" />
+    <!-- margin rule -->
+    <path
+        android:fillColor="#FFC93C"
+        android:pathData="M 40,31.23 h 1.62 v 32.35 h -1.62 z" />
+    <!-- ruled line -->
+    <path
+        android:fillColor="#F0C24B"
+        android:pathData="M 44.86,36.09 h 21.84 v 2.75 h -21.84 z" />
+    <!-- ruled line -->
+    <path
+        android:fillColor="#F0C24B"
+        android:pathData="M 44.86,44.98 h 14.56 v 2.75 h -14.56 z" />
+    <!-- ruled line -->
+    <path
+        android:fillColor="#F0C24B"
+        android:pathData="M 44.86,53.88 h 18.6 v 2.75 h -18.6 z" />
+    <!-- graphite tip -->
+    <path
+        android:fillColor="#3E2723"
+        android:pathData="M 24.48,84.78 L 28.92,75.88 L 37.5,72.56 Z" />
+    <!-- sharpened wood -->
+    <path
+        android:fillColor="#F3D9A4"
+        android:pathData="M 28.92,75.88 L 37.5,72.56 L 54.64,62.05 L 44.13,55.58 Z" />
+    <!-- barrel -->
+    <path
+        android:fillColor="#FFB300"
+        android:pathData="M 44.13,55.58 L 54.64,62.05 L 77.29,39.4 L 66.78,32.93 Z" />
+    <!-- ferrule -->
+    <path
+        android:fillColor="#C0A46B"
+        android:pathData="M 66.78,32.93 L 77.29,39.4 L 82.14,34.55 L 71.63,28.08 Z" />
+    <!-- eraser -->
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M 71.63,28.08 L 82.14,34.55 L 87,29.7 L 76.48,23.23 Z" />
+</vector>

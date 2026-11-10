@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Launch colours, kept in sync with NotesPalette in the Compose theme. -->
+    <color name="brand_gold">#FFFFC93C</color>
+    <color name="brand_butter">#FFFFE9A3</color>
+</resources>
