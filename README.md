@@ -6,10 +6,18 @@ colour, a time and a place, then send it to another user of the same app as a li
 Kotlin, Jetpack Compose, Material 3, Room. The whole UI is a warm yellow gradient, starting
 from an animated splash screen, and the mark is a ruled sheet of paper with a pencil across it.
 
-An iOS companion app with the same features and design lives beside this directory in
-`../PersonalNotes-iOS` (SwiftUI, iOS 17+). The two apps share the `.pnote` file format and the
-`personalnotes://note/d/<token>` link format, so a note written on one opens on the other — see
-the iOS README's "Cross-platform notes" section.
+An iOS companion app with the same features and design lives in the sibling repository
+[personalnotes-ios](https://github.com/StefanKostovski991/personalnotes-ios) (SwiftUI, iOS 17+).
+The two apps share the `.pnote` file format and the `personalnotes://note/d/<token>` link format,
+so a note written on one opens on the other — see the iOS README's "Cross-platform notes"
+section.
+
+<table>
+<tr>
+<td><img src="Screenshots/list.png" width="260" alt="Notes list"></td>
+<td><img src="Screenshots/editor.png" width="260" alt="Note editor"></td>
+</tr>
+</table>
 
 ## The logo
 
